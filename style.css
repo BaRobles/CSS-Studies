@@ -1,0 +1,50 @@
+* {
+  background-color: rgb(23, 28, 40);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  padding: .5em .5em 0;
+}
+
+h2 {
+  margin: -1.2em 30em 1em;
+  padding: .5em .2em;
+  background-color: rgb(43, 110, 226);
+
+  position: relative;
+}
+
+p {
+  margin: 1em 8em;
+  padding: .5em;
+  font-size: 2em;
+  text-align: justify;
+}
+
+mark.scroll-highlight {
+  color: white;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: linear-gradient(purple, purple);
+
+  animation: mark-it linear;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-iteration-count: 1;
+  animation-range: contain 0% contain 65%;
+}
+
+@keyframes mark-it {
+  0% {
+    background-size: 0 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+
